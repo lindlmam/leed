@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "leed"
+version = "0.1.0"
+description = ""
+authors = ["Martin Lindlmayer <martin.lindlmayer@student.tugraz.at>"]
+readme = "README.md"
+packages = [{include = "leed"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+numpy = "^1.24.2"
+tqdm = "^4.66.1"
+matplotlib = "^3.8.2"
+black = "^23.11.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.scripts]
+pytemplate = "leed.cli:leed"
